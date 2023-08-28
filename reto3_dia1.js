@@ -15,6 +15,9 @@ const lectura = readline.createInterface(process.stdin, process.stdout);
 
 
 //Crea un objeto con las siguientes propiedades: name, surname, age.
+const fs = require('fs/promises');
+const readline = require('readline');
+
 let persona = {
     name: '',
     surname: '',
@@ -62,3 +65,8 @@ lectura.question('¿Cuál es su nombre? ', (respuesta) => {
         });
     });
 });
+
+
+module.exports = { persona };
+
+

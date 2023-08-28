@@ -28,4 +28,4 @@ fs.writeFile('./miPersona.json', JSON.stringify(persona), ()=>{
             console.log(datos);
             }
     })
-})
+})     
